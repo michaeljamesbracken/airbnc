@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
 
-function PropertyList (){
+export default function PropertyList (){
 
     const [properties, setProperties] = useState([]);
 
@@ -27,5 +27,3 @@ function PropertyList (){
     );
 
 };
-
-export default PropertyList;

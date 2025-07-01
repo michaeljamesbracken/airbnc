@@ -1,9 +1,7 @@
-const Header = () => {
+export default function Header () {
     return (
         <div className="Header">
             airbnc
         </div>
     );
 };
-
-export default Header

@@ -99,6 +99,7 @@ button:focus-visible {
 .property {
   height: 160px;
   width: 100%;
+  column-count: 2;
   background-color: lightgrey;
   color: black;
   text-align: left;
