@@ -1,7 +1,10 @@
+import Navigation from "./Navigation";
+
 export default function Header () {
     return (
-        <div className="Header">
-            airbnc
-        </div>
+        <header>
+            <h1> airbnc </h1>
+            <Navigation/>
+        </header>
     );
 };
