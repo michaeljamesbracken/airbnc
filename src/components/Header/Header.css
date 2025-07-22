@@ -1,0 +1,12 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: lightgreen;
+    text-align: center;
+    margin: 0px;
+}
+
+h1.header-text {
+    margin: 0;
+}

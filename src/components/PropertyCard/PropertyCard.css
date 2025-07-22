@@ -1,0 +1,34 @@
+.property-card {
+    display: flex;
+    align-items: flex-start; /* or 'center' depending on vertical alignment you want */
+    gap: 20px; /* space between image and text */
+    max-width: 98%; /* optional: constrain width */
+    margin: 20px; /* optional: center on page */
+    background-color: grey;
+    border-radius: 9999px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.property-img {
+    border-radius: 50%;
+    max-width: 200px; /* control image width */
+    flex-shrink: 0; /* prevent image from shrinking */
+}
+
+.property-info {
+    flex: 1;
+    overflow: hidden;
+    display: block;
+}
+
+.manage-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 5 0 0 0;
+}
+
+.property-favourite {
+    text-align: center;
+}

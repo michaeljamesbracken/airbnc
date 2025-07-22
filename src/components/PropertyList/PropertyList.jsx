@@ -1,7 +1,9 @@
+import "./PropertyList.css";
 import {useState, useEffect} from "react";
 import axios from "axios";
-import ErrorMessage from "./ErrorMessage";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import {Link} from "react-router";
+import PropertyCard from "../PropertyCard/PropertyCard";
 
 export default function PropertyList (){
 
@@ -18,20 +20,14 @@ export default function PropertyList (){
         return <ErrorMessage/>
     };
 
-    console.log(properties);
-
     return (
         <ul className="property-list"> 
             {properties.map((property) => {
                 return (
-                    <li key={property.property_id} className="property" onClick={() => {console.log(`load property page for ${property.property_name}`)}}>
-                        <Link to={`/properties/${property.property_id}`}>
-                            <p>INSERT IMAGE HERE</p>
-                            <h2>{property.property_name}</h2>
-                            <p>{property.location}</p>
-                        </Link>
+                    <li key={property.property_id}>
+                        <PropertyCard property={property}/>
                     </li>
-                )
+                );
             })}
         </ul>
     );
