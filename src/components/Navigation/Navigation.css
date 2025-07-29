@@ -3,3 +3,14 @@
     justify-content: space-around;
     padding-bottom: 5px;
 }
+
+.nav-button {
+    transition: transform .2s;
+    height: 30px;
+    width: 30px;
+    color: black;
+}
+
+.nav-button:hover {
+    transform: scale(1.2);
+}

@@ -1,6 +1,5 @@
+import FavouriteButton from "../FavouriteButton/FavouriteButton";
 import "./PropertyCard.css";
-import {useState, useEffect} from "react";
-import axios from "axios";
 import {Link} from "react-router";
 
 
@@ -16,7 +15,7 @@ export default function PropertyCard (props) {
                 <p className="manage-overflow">{property.location}</p>
             </div>
             <div className="property-favourite">
-                HEART
+                <FavouriteButton/>
             </div>
         </Link>
     );
